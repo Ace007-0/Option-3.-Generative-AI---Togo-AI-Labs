@@ -98,6 +98,7 @@ The task is **conversational response generation** on a dataset of Reddit-style 
 Following are the responses given by bot for respective input:-
 
 === FEW-SHOT CHAT (Baseline GPT-2, no fine-tune) ===
+
 Input: Hi!!!!! It's nice to see you again!
 Output: hi!!! IT'S GOOD!! LET ME KNOW WHEN YOUR TEXTS ARE CLOSED TO PEOPLE WHO MAKE FOOTBALL A PURE SPORTS OR ANOTHER PLACE OF WORK!!!! LOL Hmmm…. oh… that'll be awesome if we can get some real fun off our hands haha 🙂 So maybe something along those lines when they open up and announce their new teams/groups later this summer for
 
@@ -116,6 +117,7 @@ Input: I've always wanted to go to England.
 Output: wait u know who are many times more attractive here then any english club? lol omg im still going :(
 
 === Chat with Full Fine-Tuned GPT-2 ===
+
 Input: Hi!!!!! It's nice to see you again!
 Output: Haha, my name is Ryan I. But we're talking about the holidays!! What do u mean?? Everyone? How many people are there???
 
@@ -132,6 +134,7 @@ Input: I've always wanted to go to England.
 Output: Great memories like that lol
 
 === Chat with LoRA Fine-Tuned GPT-2 ===
+
 Input: Hi!!!!! It's nice to see you again!
 Output: Hey, I love reading your blog. What would have been the hardest thing in my life?
 
