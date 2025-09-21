@@ -211,10 +211,10 @@ Images of the output
 ## 📁 Repository Structure
 
 ```
-├── dialogs.csv          # Dataset (upload manually in Colab)
-├── gpt2_finetune.ipynb  # Main Colab script
+├── README.md            # Project documentation
 ├── Report.pdf           # Full project report
-└── README.md            # Project documentation
+├── dialogs.csv          # Dataset (upload manually in Colab)
+└── gpt2_finetune.ipynb  # Main Colab script
 ```
 
 ---
