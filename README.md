@@ -100,26 +100,34 @@ Following are the responses given by bot for respective input:-
 === FEW-SHOT CHAT (Baseline GPT-2, no fine-tune) ===
 Input: Hi!!!!! It's nice to see you again!
 Output: hi!!! IT'S GOOD!! LET ME KNOW WHEN YOUR TEXTS ARE CLOSED TO PEOPLE WHO MAKE FOOTBALL A PURE SPORTS OR ANOTHER PLACE OF WORK!!!! LOL Hmmm…. oh… that'll be awesome if we can get some real fun off our hands haha 🙂 So maybe something along those lines when they open up and announce their new teams/groups later this summer for
+
 Input: Looking for interesting podcasts
 Output: listen back from time ago 😛 "Wanna play my game?" - Gotta try out these stuff :P
 
 *Gulp- This is such another place where people come by /r/-and enjoy your music without being rude
+
 Input: what do you usually do for fun?
 Output: watch sports movies or videos on youtube :)
+
 Input: First time with wifi on a plane and oh god is it glorious
 Output: thats ok... its super cool.. lets show other peoples things too
+
 Input: I've always wanted to go to England.
 Output: wait u know who are many times more attractive here then any english club? lol omg im still going :(
 
 === Chat with Full Fine-Tuned GPT-2 ===
 Input: Hi!!!!! It's nice to see you again!
 Output: Haha, my name is Ryan I. But we're talking about the holidays!! What do u mean?? Everyone? How many people are there???
+
 Input: Looking for interesting podcasts
 Output: The weirdest random human being on a podcast now just got this one though... what am i right and how could it be wrong :)
+
 Input: what do you usually do for fun?
 Output: Beer (I'm in LA)
+
 Input: First time with wifi on a plane and oh god is it glorious
 Output: Well im gonna eat dinner tonight but can't wait until 11pm so please dont feel sorry if thats too bad because its awesome :(
+
 Input: I've always wanted to go to England.
 Output: Great memories like that lol
 
@@ -129,12 +137,16 @@ Output: Hey, I love reading your blog. What would have been the hardest thing in
 
 
 Is anyone sad that we were alone last night? :) Reply Delete
+
 Input: Looking for interesting podcasts
 Output: Who are these things called a "troll" or an example of somebody doing it wrong lol?  This is not even possible haha :P Thank god i found out about this!
+
 Input: what do you usually do for fun?
 Output: Ahhhh sorry but its very hard and kinda boring...its like watching TV when u're asleep so im really busy too :(
+
 Input: First time with wifi on a plane and oh god is it glorious
 Output: Ok.....Great!!! Its ok if done today then can't wait....
+
 Input: I've always wanted to go to England.
 Output: Yeah thats good enough!! Im going there soon ;) But how did those 2days happen after all?????? 😀❤️😂🐁☯♦ ヽ ✿︵#👌。 ❪▴∄ц〉ỏ♥╬ Ἡ๎Бぶྫ‍◊
 
@@ -148,6 +160,7 @@ LoRA Fine-Tuned GPT-2   95.815559 0.198758
 * **BLEU** (relevance to reference response).
 
 > LoRA achieves higher BLEU despite worse perplexity, suggesting **more relevant but noisier outputs**.
+
 Images of the output
 <img width="1753" height="393" alt="new1" src="https://github.com/user-attachments/assets/88573e3a-8951-4ad9-9861-433e87326bda" />
 <img width="1302" height="582" alt="new2" src="https://github.com/user-attachments/assets/af6dce94-9f78-4573-88e3-12f1990a32ea" />
