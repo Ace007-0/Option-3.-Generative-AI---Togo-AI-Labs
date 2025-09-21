@@ -38,8 +38,8 @@ The task is **conversational response generation** on a dataset of Reddit-style 
 
 ## 📂 Dataset
 
-* Source: [Kaggle Reddit Conversations](https://www.kaggle.com/)
-* Format: CSV with columns `question` and `answer`. Removed 3rd column entirely as it was not needed.
+* Source: [Kaggle Reddit Conversations](https://www.kaggle.com/datasets/jerryqu/reddit-conversations)
+* Format: CSV file has 3 columns, remove 3rd column entirely as it is not needed. Title 1st column as `question` and 2nd as `answer`.
 * Processing:
 
   * Conversations structured as:
