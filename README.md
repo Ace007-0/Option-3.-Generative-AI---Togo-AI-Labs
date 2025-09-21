@@ -1,4 +1,4 @@
-# Option-3.-Generative-AI---Togo-AI-Labs
+# Option-3.-Generative-AI--Togo-AI-Labs
 
 ## 📌 Overview
 
@@ -39,7 +39,7 @@ The task is **conversational response generation** on a dataset of Reddit-style 
 ## 📂 Dataset
 
 * Source: [Kaggle Reddit Conversations](https://www.kaggle.com/)
-* Format: CSV with columns `question` and `answer`.
+* Format: CSV with columns `question` and `answer`. Removed 3rd column entirely as it was not needed.
 * Processing:
 
   * Conversations structured as:
@@ -57,7 +57,7 @@ The task is **conversational response generation** on a dataset of Reddit-style 
 
 ### 1. Few-Shot Baseline (Vanilla GPT-2)
 
-* Handcrafted exemplar conversation prompts (\~8 exchanges).
+* Handcrafted exemplar conversation prompts.
 * Tested on 5 fixed queries:
 
   1. *Hi!!!!! It's nice to see you again!*
@@ -76,7 +76,6 @@ The task is **conversational response generation** on a dataset of Reddit-style 
 * Schedule: Linear warmup (10 steps).
 * Batch size: 4, Max length: 512.
 * Epochs: 5.
-* Objective: Causal LM loss.
 
 ✅ Results: More coherent and relevant than few-shot, but still simplistic.
 
@@ -91,7 +90,7 @@ The task is **conversational response generation** on a dataset of Reddit-style 
 * Optimizer: AdamW (lr=2e-4).
 * Epochs: 10.
 
-✅ Results: Comparable to full fine-tuning, more efficient. Sometimes quirky (e.g., emojis, random symbols).
+✅ Results: Comparable to full fine-tuning, more efficient. Sometimes quirky.
 
 ---
 
@@ -115,12 +114,21 @@ The task is **conversational response generation** on a dataset of Reddit-style 
 ## 🧩 Creative Extension
 
 * **LoRA for efficiency**: Updates <1% parameters, aligning with modern PEFT trends.
-* **LLM-as-a-judge**: Used 7 LLMs (GPT-4o-mini, Grok-4, Gemini, Claude, Qwen, DeepSeek, Kimi-K2) to rank models on 9 conversational metrics (coherence, creativity, safety, efficiency, etc.).
-* Results showed:
+* **LLM-as-a-judge**: Used 7 LLMs (GPT-4o-mini, Grok-4, Gemini, Claude, Qwen, DeepSeek, Kimi-K2) to rank models on 9 conversational metrics (coherence, creativity, safety, efficiency, etc.). 
+  <img width="732" height="495" alt="1 gpt4" src="https://github.com/user-attachments/assets/d369424d-5a0f-4b8b-82da-cba8e7f2277c" />
+ <img width="737" height="491" alt="2 Gemi" src="https://github.com/user-attachments/assets/d018ad70-4fe4-4853-831b-8833afe439a5" />
+ <img width="731" height="487" alt="3 claude-4" src="https://github.com/user-attachments/assets/f042c1c1-3c53-47f6-83c1-cd6f21ea5311" />
+ <img width="746" height="497" alt="Screenshot 2025-09-21 134109" src="https://github.com/user-attachments/assets/b24f0c8c-27bf-470a-8568-936125fbefc5" />
+ <img width="641" height="432" alt="5 deep" src="https://github.com/user-attachments/assets/8f91f1e6-2256-4bb5-901f-94d6cad63c97" />
+ <img width="641" height="427" alt="6 grok" src="https://github.com/user-attachments/assets/7c07991e-1b1b-44a4-8333-24cf539fce96" />
+ <img width="641" height="430" alt="7 qwen" src="https://github.com/user-attachments/assets/7a827ac3-03ab-4149-9105-492328eccc34" />
+
+* Results shows:
 
   * Full fine-tuning best for **relevance & fluency**.
   * LoRA preferred for **creativity & diversity**.
   * Few-shot excelled in **efficiency/safety**.
+
 
 ---
 
@@ -152,19 +160,9 @@ The task is **conversational response generation** on a dataset of Reddit-style 
 ## 🙌 Acknowledgements
 
 * Brown et al., *“Language Models are Few-Shot Learners”*, NeurIPS 2020.
+* Togo AI Lab
 * Hugging Face Transformers & PEFT libraries.
 * Kaggle Reddit Conversations dataset.
 
----
-
-Would you like me to also **add usage instructions** (e.g., how to run the script in Colab step by step), or keep this README more like a **research-style summary**?
-
-<img width="732" height="495" alt="1 gpt4" src="https://github.com/user-attachments/assets/d369424d-5a0f-4b8b-82da-cba8e7f2277c" />
-<img width="737" height="491" alt="2 Gemi" src="https://github.com/user-attachments/assets/d018ad70-4fe4-4853-831b-8833afe439a5" />
-<img width="731" height="487" alt="3 claude-4" src="https://github.com/user-attachments/assets/f042c1c1-3c53-47f6-83c1-cd6f21ea5311" />
-<img width="746" height="497" alt="Screenshot 2025-09-21 134109" src="https://github.com/user-attachments/assets/b24f0c8c-27bf-470a-8568-936125fbefc5" />
-<img width="641" height="432" alt="5 deep" src="https://github.com/user-attachments/assets/8f91f1e6-2256-4bb5-901f-94d6cad63c97" />
-<img width="641" height="427" alt="6 grok" src="https://github.com/user-attachments/assets/7c07991e-1b1b-44a4-8333-24cf539fce96" />
-<img width="641" height="430" alt="7 qwen" src="https://github.com/user-attachments/assets/7a827ac3-03ab-4149-9105-492328eccc34" />
 
 
