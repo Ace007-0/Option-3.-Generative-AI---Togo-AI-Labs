@@ -154,10 +154,12 @@ Input: I've always wanted to go to England.
 Output: Yeah thats good enough!! Im going there soon ;) But how did those 2days happen after all?????? 😀❤️😂🐁☯♦ ヽ ✿︵#👌。 ❪▴∄ц〉ỏ♥╬ Ἡ๎Бぶྫ‍◊
 
 === Evaluation Comparison Table ===
-                Model  Perplexity     BLEU
-       Few-Shot GPT-2   40.572235 0.115473
-Full Fine-Tuned GPT-2   47.132366 0.118590
-LoRA Fine-Tuned GPT-2   95.815559 0.198758
+
+| Model                 | Perplexity ↓ | BLEU ↑ |
+| --------------------- | ------------ | ------ |
+| Few-Shot GPT-2        | 40.57        | 0.115  |
+| Full Fine-Tuned GPT-2 | 47.13        | 0.119  |
+| LoRA Fine-Tuned GPT-2 | 95.82        | 0.199  |
 
 * **Perplexity** (fluency).
 * **BLEU** (relevance to reference response).
