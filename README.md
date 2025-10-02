@@ -1,4 +1,4 @@
-# Fewshot VS Finetune VS Lora-GPT2
+# Fewshot VS Finetuning VS Lora-GPT2
 
 ## 📌 Overview
 
