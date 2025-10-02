@@ -1,4 +1,4 @@
-# Option-3-Generative-AI [Togo-AI-Labs]
+# Fewshot VS Finetune VS Lora-GPT2
 
 ## 📌 Overview
 
